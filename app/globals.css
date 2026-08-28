@@ -1,26 +1,279 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Tokens de marca — paleta oficial (paleta-de-cores.png / PRD 5.1). Mantida integralmente.
+ * Tailwind v4: o @theme substitui o theme.extend do tailwind.config.
+ */
+@theme {
+  --color-noite: #0a1931;
+  --color-marinho: #1a3d63;
+  --color-aco: #4a7fa7;
+  --color-gelo: #b3cfe5;
+  --color-offwhite: #f6fafd;
+  --color-dourado: #c8a96a;
+  --color-dourado-claro: #dcc493;
+  --color-dourado-escuro: #a98a4d;
+  /* Variantes para TEXTO sobre off-white (AA) */
+  --color-aco-texto: #3f6f94;
+  --color-dourado-texto: #9c7f42;
+
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-libre-franklin), system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --tracking-eyebrow: 0.14em;
+
+  --shadow-card: 0 1px 2px rgb(10 25 49 / 0.04), 0 12px 32px -12px rgb(10 25 49 / 0.14);
+  --shadow-card-hover: 0 2px 4px rgb(10 25 49 / 0.05), 0 24px 48px -16px rgb(10 25 49 / 0.24);
+  --shadow-gold: 0 10px 30px -10px rgb(200 169 106 / 0.55);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-offwhite);
+    color: var(--color-noite);
+    font-family: var(--font-sans);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-variation-settings: "opsz" 144;
+    color: var(--color-marinho);
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-dourado);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    .reveal {
+      opacity: 1 !important;
+      transform: none !important;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ---------- Utilitários de marca ---------- */
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-aco-texto);
 }
+
+@utility hairline {
+  border-top: 1px solid color-mix(in srgb, var(--color-dourado) 50%, transparent);
+}
+
+@utility container-site {
+  width: 100%;
+  max-width: 76rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (min-width: 640px) {
+    padding-inline: 2rem;
+  }
+}
+
+/* Card padrão: branco, borda gelo, sombra suave, filete dourado no hover */
+@utility card {
+  position: relative;
+  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--color-gelo) 55%, transparent);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 300ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    border-color 300ms;
+}
+
+@utility card-hover {
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: color-mix(in srgb, var(--color-dourado) 60%, transparent);
+  }
+}
+
+/* Card sobre fundo escuro (vidro) */
+@utility card-dark {
+  position: relative;
+  background: color-mix(in srgb, #fff 5%, transparent);
+  border: 1px solid color-mix(in srgb, #fff 10%, transparent);
+  border-radius: 0.75rem;
+  backdrop-filter: blur(6px);
+  transition:
+    transform 300ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    background 300ms,
+    border-color 300ms;
+  &:hover {
+    transform: translateY(-4px);
+    background: color-mix(in srgb, #fff 8%, transparent);
+    border-color: color-mix(in srgb, var(--color-dourado) 55%, transparent);
+  }
+}
+
+/* Medalhão de ícone: círculo dourado com anel */
+@utility medallion {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  color: var(--color-noite);
+  background: linear-gradient(135deg, var(--color-dourado-claro), var(--color-dourado) 55%, var(--color-dourado-escuro));
+  box-shadow:
+    0 0 0 4px color-mix(in srgb, var(--color-dourado) 22%, transparent),
+    var(--shadow-gold);
+}
+
+/* Ícone em quadrado suave (para cards claros) */
+@utility icon-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0.75rem;
+  color: var(--color-marinho);
+  background: color-mix(in srgb, var(--color-gelo) 30%, #fff);
+  border: 1px solid color-mix(in srgb, var(--color-gelo) 60%, transparent);
+  transition: background 300ms, color 300ms, border-color 300ms;
+}
+
+/* Linha dourada curta (assinatura tipográfica) */
+@utility gold-rule {
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-dourado), var(--color-dourado-claro));
+  border-radius: 2px;
+}
+
+/* Cortes diagonais (referência Lexora) */
+@utility angle-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - clamp(28px, 4vw, 64px)), 0 100%);
+}
+@utility angle-top {
+  clip-path: polygon(0 clamp(28px, 4vw, 64px), 100% 0, 100% 100%, 0 100%);
+}
+@utility angle-both {
+  clip-path: polygon(0 clamp(28px, 4vw, 64px), 100% 0, 100% calc(100% - clamp(28px, 4vw, 64px)), 0 100%);
+}
+
+/* Fundo escuro com textura sutil */
+@utility bg-noite-texture {
+  background-color: var(--color-noite);
+  background-image:
+    radial-gradient(ellipse 60% 50% at 80% 0%, color-mix(in srgb, var(--color-marinho) 70%, transparent), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, color-mix(in srgb, var(--color-aco) 20%, transparent), transparent 70%),
+    repeating-linear-gradient(0deg, transparent 0 39px, color-mix(in srgb, #fff 3%, transparent) 39px 40px),
+    repeating-linear-gradient(90deg, transparent 0 39px, color-mix(in srgb, #fff 3%, transparent) 39px 40px);
+}
+
+/* Texto em gradiente dourado */
+@utility text-gold-gradient {
+  background: linear-gradient(100deg, var(--color-dourado-claro), var(--color-dourado) 50%, var(--color-dourado-escuro));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Moldura fotográfica com filete dourado deslocado */
+@utility photo-frame {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translate(14px, 14px);
+    border: 1px solid color-mix(in srgb, var(--color-dourado) 70%, transparent);
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+/* ---------- Animações ---------- */
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slow-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 700ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+.hero-in > * {
+  animation: hero-in 800ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.hero-in > *:nth-child(2) { animation-delay: 120ms; }
+.hero-in > *:nth-child(3) { animation-delay: 240ms; }
+.hero-in > *:nth-child(4) { animation-delay: 360ms; }
+.hero-in > *:nth-child(5) { animation-delay: 480ms; }
