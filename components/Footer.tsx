@@ -79,8 +79,8 @@ export default function Footer() {
             <ul className="mt-5 flex flex-col gap-1 text-sm">
               <li><Link href="/areas/empresarial" className="inline-flex min-h-9 items-center text-offwhite/85 transition-colors hover:text-dourado-claro">Empresarial e Penal Econômico</Link></li>
               <li><Link href="/areas/consumidor-aereo" className="inline-flex min-h-9 items-center text-offwhite/85 transition-colors hover:text-dourado-claro">Consumidor e Aéreo</Link></li>
-              <li><Link href="/areas-de-atuacao" className="inline-flex min-h-9 items-center text-offwhite/85 transition-colors hover:text-dourado-claro">Direito Cível</Link></li>
-              <li><Link href="/areas-de-atuacao" className="inline-flex min-h-9 items-center text-offwhite/85 transition-colors hover:text-dourado-claro">Direito Trabalhista</Link></li>
+              <li><Link href="/areas/civel" className="inline-flex min-h-9 items-center text-offwhite/85 transition-colors hover:text-dourado-claro">Direito Cível</Link></li>
+              <li><Link href="/areas/trabalhista" className="inline-flex min-h-9 items-center text-offwhite/85 transition-colors hover:text-dourado-claro">Direito Trabalhista</Link></li>
             </ul>
           </div>
 

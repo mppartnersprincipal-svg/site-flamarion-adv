@@ -58,6 +58,8 @@ export const routes = [
   { path: "/areas-de-atuacao", priority: 0.9 },
   { path: "/areas/empresarial", priority: 0.9 },
   { path: "/areas/consumidor-aereo", priority: 0.9 },
+  { path: "/areas/civel", priority: 0.9 },
+  { path: "/areas/trabalhista", priority: 0.9 },
   { path: "/equipe", priority: 0.7 },
   { path: "/contato", priority: 0.8 },
   { path: "/faq", priority: 0.6 },

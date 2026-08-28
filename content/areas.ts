@@ -31,11 +31,15 @@ export const areas = {
       titulo: "Direito Cível",
       descricao:
         "Proposituras e defesas em geral, família e sucessões, causas de direito do consumidor e restituição de valores pagos na aquisição de imóveis.",
+      href: "/areas/civel",
+      linkLabel: "Conhecer a área",
     },
     {
       numero: "04",
       titulo: "Direito Trabalhista",
       descricao: "Propositura de ações trabalhistas e acompanhamento do processo em todas as suas fases.",
+      href: "/areas/trabalhista",
+      linkLabel: "Conhecer a área",
     },
   ],
 };
