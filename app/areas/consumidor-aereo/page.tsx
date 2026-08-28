@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import CtaBlock from "@/components/CtaBlock";
 import FaqAccordion from "@/components/FaqAccordion";
 import IconCard from "@/components/IconCard";
+import InlineCta from "@/components/InlineCta";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
@@ -84,6 +85,13 @@ export default function ConsumidorAereoPage() {
             <p className="text-lg leading-relaxed text-gelo/90">{c.comoAtuamos.texto}</p>
           </Reveal>
         </div>
+        <div className="container-site relative mt-10">
+          <InlineCta
+            tone="dark"
+            title="Teve problemas com o seu voo?"
+            text="Guarde os comprovantes e fale com a equipe. Avaliamos a sua situação e explicamos o que a lei prevê."
+          />
+        </div>
       </section>
 
       {/* Mini-FAQ */}
@@ -96,6 +104,11 @@ export default function ConsumidorAereoPage() {
             <FaqAccordion items={c.faq.itens} schema />
           </Reveal>
         </div>
+        <InlineCta
+          className="mt-12"
+          title="Ainda tem dúvidas sobre o seu caso?"
+          text="Conte o que aconteceu. A orientação inicial é feita por WhatsApp ou telefone."
+        />
       </section>
 
       <CtaBlock title={c.cta.titulo} text={c.cta.texto} />

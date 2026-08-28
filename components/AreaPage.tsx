@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "./Button";
 import CtaBlock from "./CtaBlock";
 import IconCard from "./IconCard";
+import InlineCta from "./InlineCta";
 import PageHero from "./PageHero";
 import Reveal from "./Reveal";
 import SectionHeader from "./SectionHeader";
@@ -77,6 +78,7 @@ export default function AreaPage({ c, heroImage, sectionImage, crumb }: Props) {
             );
           })}
         </ul>
+        <InlineCta className="mt-12" />
       </section>
 
       <section className="angle-both relative isolate overflow-hidden bg-noite py-28 text-offwhite sm:py-36">
@@ -122,6 +124,12 @@ export default function AreaPage({ c, heroImage, sectionImage, crumb }: Props) {
               </ul>
             </Reveal>
           </div>
+          <InlineCta
+            tone="dark"
+            className="mt-10"
+            title="Fale com quem vai conduzir o seu caso"
+            text="Entre em contato e receba uma orientação inicial clara sobre os caminhos possíveis."
+          />
         </div>
       </section>
 

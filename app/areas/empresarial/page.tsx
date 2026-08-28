@@ -3,6 +3,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import CtaBlock from "@/components/CtaBlock";
 import IconCard from "@/components/IconCard";
+import InlineCta from "@/components/InlineCta";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
@@ -69,6 +70,11 @@ export default function EmpresarialPage() {
             );
           })}
         </ul>
+        <InlineCta
+          className="mt-12"
+          title="Sua empresa precisa de apoio jurídico?"
+          text="Assessoria contínua ou por demanda. Converse com a equipe para avaliarmos o seu caso."
+        />
       </section>
 
       {/* Para quem é / Por que a Flamarion — fundo escuro com foto */}
@@ -101,6 +107,12 @@ export default function EmpresarialPage() {
               ))}
             </ul>
           </Reveal>
+          <InlineCta
+            tone="dark"
+            className="lg:col-span-2"
+            title="Fale com quem vai conduzir o seu caso"
+            text="Entre em contato e receba uma orientação inicial clara sobre os caminhos possíveis."
+          />
         </div>
       </section>
 
