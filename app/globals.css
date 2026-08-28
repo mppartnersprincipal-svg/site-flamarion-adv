@@ -277,3 +277,14 @@
 .hero-in > *:nth-child(3) { animation-delay: 240ms; }
 .hero-in > *:nth-child(4) { animation-delay: 360ms; }
 .hero-in > *:nth-child(5) { animation-delay: 480ms; }
+
+@keyframes wa-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
