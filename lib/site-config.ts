@@ -6,9 +6,9 @@
 export const site = {
   nome: "Flamarion Advocacia",
   tagline: "Direito com técnica, trajetória e proximidade.",
-  whatsapp: "", // PENDENTE — número único do escritório. Formato: "+55 62 9XXXX-XXXX" (com DDI)
-  telefone: "", // PENDENTE — formato: "+55 62 XXXX-XXXX" (com DDI, para o link tel:)
-  email: "", // PENDENTE — contato@flamarionadvocacia.com.br (a configurar)
+  whatsapp: "+55 62 99940-1316", // número único do escritório
+  telefone: "+55 62 99940-1316",
+  email: "advocaciaflamarion@gmail.com",
   endereco:
     "Segunda Avenida, Qd. 01 B, Lt. 42/44, Edifício Atlanta Business Center, Sala 15, 2º Andar, Condomínio Cidade Empresarial, Cidade Vera Cruz, Aparecida de Goiânia/GO",
   horario: "Segunda a sexta, das 8h às 12h e das 13h30 às 17h30",
