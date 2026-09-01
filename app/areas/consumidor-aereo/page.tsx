@@ -60,7 +60,7 @@ export default function ConsumidorAereoPage() {
               <div>
                 <IconPlane size={34} />
                 <h3 className="mt-5 text-[1.4rem] leading-snug text-noite">Passou por alguma dessas situações?</h3>
-                <p className="mt-3 text-sm leading-relaxed text-noite/85">Guarde os comprovantes e fale com a equipe. Avaliamos o seu caso sem compromisso.</p>
+                <p className="mt-3 text-sm leading-relaxed text-noite/85">Guarde os comprovantes e fale com a equipe. Avaliamos a sua situação e explicamos o que a lei prevê.</p>
               </div>
               <div className="mt-6">
                 <WhatsappButton variant="primary" label="Falar agora" />

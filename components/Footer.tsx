@@ -96,7 +96,7 @@ export default function Footer() {
                 <address className="not-italic leading-relaxed text-gelo/85">
                   Segunda Avenida, Qd. 01 B, Lt. 42/44 — Ed. Atlanta Business Center, Sala 15, 2º Andar
                   <br />
-                  Cond. Cidade Empresarial — Aparecida de Goiânia/GO
+                  Cond. Cidade Empresarial — Cidade Vera Cruz, Aparecida de Goiânia/GO
                 </address>
               </li>
               <li className="flex items-start gap-3">
