@@ -48,21 +48,21 @@ export default function HomePage() {
     <>
       {/* ===== HERO ===== */}
       <section className="relative isolate overflow-hidden bg-noite text-offwhite">
-        <div className="absolute inset-0 overflow-hidden">
+        <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
           <Image
             src="/fotos/hero-justica.jpg"
             alt=""
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[70%_center] opacity-80 saturate-[0.85] motion-safe:animate-[slow-zoom_18s_ease-out_forwards]"
+            className="object-cover object-[70%_center] opacity-30 saturate-[0.7] motion-safe:animate-[slow-zoom_18s_ease-out_forwards]"
           />
         </div>
-        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-noite via-noite/80 to-noite/10" />
+        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-noite via-noite/90 to-noite/60" />
         <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-noite to-transparent" />
 
-        <div className="container-site relative grid min-h-[600px] items-center py-20 sm:min-h-[680px] lg:min-h-[760px] lg:py-28">
-          <div className="hero-in max-w-3xl">
+        <div className="container-site relative grid min-h-[600px] items-center gap-16 py-20 sm:min-h-[680px] lg:min-h-[780px] lg:grid-cols-[1fr_minmax(0,27rem)] lg:gap-14 lg:py-28 xl:grid-cols-[1fr_minmax(0,31rem)] xl:gap-20">
+          <div className="hero-in max-w-2xl">
             <Eyebrow tone="dourado" className="mb-6">
               {home.hero.eyebrow}
             </Eyebrow>
@@ -82,6 +82,44 @@ export default function HomePage() {
               <li className="inline-flex items-center gap-2"><IconCheck size={16} className="text-dourado" /> Goiás, DF e todo o Brasil</li>
             </ul>
           </div>
+
+          {/* Retrato institucional da dupla — moldura dourada + legenda por advogado */}
+          <figure className="relative mx-auto w-full max-w-md motion-safe:animate-[hero-in_800ms_cubic-bezier(0.2,0.7,0.2,1)_400ms_both] lg:mx-0 lg:max-w-none">
+            <span
+              aria-hidden="true"
+              className="absolute -left-3 -top-3 h-20 w-20 rounded-tl-2xl border-l-2 border-t-2 border-dourado/70 sm:-left-4 sm:-top-4 sm:h-24 sm:w-24"
+            />
+            <span
+              aria-hidden="true"
+              className="absolute -bottom-3 -right-3 h-20 w-20 rounded-br-2xl border-b-2 border-r-2 border-dourado/70 sm:-bottom-4 sm:-right-4 sm:h-24 sm:w-24"
+            />
+            <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/15 shadow-[0_30px_70px_-30px_rgb(0_0_0/0.75)]">
+              <Image
+                src="/fotos/equipe-flamarion.jpg"
+                alt="Dr. Márcio Flamarion e Dra. Letícia Alves no escritório da Flamarion Advocacia, em Goiânia"
+                width={2000}
+                height={1667}
+                priority
+                sizes="(min-width: 1280px) 31rem, (min-width: 1024px) 27rem, (min-width: 640px) 28rem, 100vw"
+                className="w-full object-cover"
+              />
+              <span aria-hidden="true" className="absolute inset-x-0 top-0 h-1 bg-dourado" />
+              <figcaption className="grid grid-cols-2 divide-x divide-white/10 border-t border-white/10 bg-noite/90">
+                <div className="px-4 py-3.5 sm:px-5">
+                  <span className="block font-display text-[15px] leading-snug text-offwhite sm:text-base">Dr. Márcio Flamarion</span>
+                  <span className="mt-1 block text-[10px] font-semibold uppercase leading-snug tracking-[0.08em] text-dourado sm:text-[11px]">
+                    Direito empresarial
+                  </span>
+                </div>
+                <div className="px-4 py-3.5 sm:px-5">
+                  <span className="block font-display text-[15px] leading-snug text-offwhite sm:text-base">Dra. Letícia Alves</span>
+                  <span className="mt-1 block text-[10px] font-semibold uppercase leading-snug tracking-[0.08em] text-dourado sm:text-[11px]">
+                    Consumidor e tributário
+                  </span>
+                </div>
+              </figcaption>
+            </div>
+          </figure>
         </div>
       </section>
 

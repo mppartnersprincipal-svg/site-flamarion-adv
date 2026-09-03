@@ -35,7 +35,14 @@ export default function SocioCard({ nome, cargo, oab, bio, foto, variant = "comp
       <article className={`card card-hover group overflow-hidden ${className}`}>
         <div className="relative aspect-[4/3] w-full overflow-hidden bg-noite">
           {foto ? (
-            <Image src={foto.src} alt={foto.alt} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover transition-transform duration-700 motion-safe:group-hover:scale-105" />
+            <Image
+              src={foto.src}
+              alt={foto.alt}
+              fill
+              sizes="(min-width: 1024px) 40vw, 100vw"
+              /* Retratos são 4:5; em caixa 4:3 o object-position mantém o rosto no terço superior. */
+              className="object-cover object-[center_15%] transition-transform duration-700 motion-safe:group-hover:scale-105"
+            />
           ) : (
             <Placeholder nome={nome} />
           )}
