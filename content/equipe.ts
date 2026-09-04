@@ -20,14 +20,14 @@ export const equipe = {
       nome: "Dr. Márcio Flamarion",
       cargo: "Advogado",
       oab: site.oabMarcio,
-      bio: "Formado em Direito desde 1996 e pós-graduado em Direito Civil e Processo Civil, o Dr. Márcio advoga de forma ininterrupta há quase 30 anos, sempre com escritório próprio. Ao longo da carreira, atuou nas áreas trabalhista, cível, de família e sucessões e criminal, e hoje concentra sua atuação na área empresarial — com destaque para a defesa em crimes contra a ordem tributária. É referência de experiência e continuidade dentro do escritório.",
+      bio: "Formado em Direito desde 1997 e pós-graduado em Direito Civil e Processo Civil, o Dr. Márcio advoga de forma ininterrupta há quase 30 anos, sempre com escritório próprio. Ao longo da carreira, atuou nas áreas trabalhista, cível, de família e sucessões e criminal, e hoje concentra sua atuação na área empresarial — com destaque para a defesa em crimes contra a ordem tributária. É referência de experiência e continuidade dentro do escritório.",
       foto: { src: "/fotos/retrato-marcio.jpg", alt: "Retrato do Dr. Márcio Flamarion, advogado da Flamarion Advocacia" },
     },
     {
       nome: "Dra. Letícia Alves",
       cargo: "Advogada",
       oab: site.oabLeticia, // vazio → "OAB/GO [a confirmar]"
-      bio: "Graduada em Direito em 2026, a Dra. Letícia integra o escritório com foco em direito do consumidor — especialmente direito aéreo — e em direito tributário na esfera cível. Está iniciando pós-graduação em Direito Tributário e Processo Tributário, aprofundando a área que pretende desenvolver dentro da Flamarion Advocacia. Traz um olhar atual e uma atuação atenta e didática para o dia a dia dos clientes.",
+      bio: "A Dra. Letícia integra o escritório com foco em direito do consumidor — especialmente direito aéreo — e em direito tributário na esfera cível. Está iniciando pós-graduação em Direito Tributário e Processo Tributário, aprofundando a área que pretende desenvolver dentro da Flamarion Advocacia. Traz um olhar atual e uma atuação atenta e didática para o dia a dia dos clientes.",
       foto: { src: "/fotos/retrato-leticia.jpg", alt: "Retrato da Dra. Letícia Alves, advogada da Flamarion Advocacia" },
     },
   ],

@@ -8,7 +8,7 @@ export const oEscritorio = {
   eyebrow: "O Escritório",
   h1: "Experiência que se construiu com constância.",
   intro:
-    "A Flamarion Advocacia nasce da trajetória de quase três décadas do Dr. Márcio Flamarion na advocacia — sempre com escritório próprio e atuação ininterrupta desde 1996. Ao longo desse caminho, o escritório passou por diferentes áreas do Direito e amadureceu uma forma de trabalhar que continua sendo a nossa marca: atuação técnica, acompanhamento próximo e uma comunicação clara com quem confia a nós o seu caso.",
+    "A Flamarion Advocacia nasce da trajetória de quase três décadas do Dr. Márcio Flamarion na advocacia — sempre com escritório próprio e atuação ininterrupta desde 1997. Ao longo desse caminho, o escritório passou por diferentes áreas do Direito e amadureceu uma forma de trabalhar que continua sendo a nossa marca: atuação técnica, acompanhamento próximo e uma comunicação clara com quem confia a nós o seu caso.",
   blocos: [
     {
       titulo: "Nossa forma de atuar",

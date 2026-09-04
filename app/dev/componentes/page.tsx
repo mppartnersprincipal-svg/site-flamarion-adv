@@ -154,13 +154,13 @@ export default function ComponentesPage() {
             nome="Dr. Márcio Flamarion"
             cargo="Advogado"
             oab="OAB/GO 16.939"
-            bio="Formado em Direito desde 1996 e pós-graduado em Direito Civil e Processo Civil, o Dr. Márcio advoga de forma ininterrupta há quase 30 anos, sempre com escritório próprio."
+            bio="Formado em Direito desde 1997 e pós-graduado em Direito Civil e Processo Civil, o Dr. Márcio advoga de forma ininterrupta há quase 30 anos, sempre com escritório próprio."
           />
           <SocioCard
             nome="Dra. Letícia Alves"
             cargo="Advogada"
             oab=""
-            bio="Graduada em Direito em 2026, a Dra. Letícia integra o escritório com foco em direito do consumidor — especialmente direito aéreo — e em direito tributário na esfera cível."
+            bio="A Dra. Letícia integra o escritório com foco em direito do consumidor — especialmente direito aéreo — e em direito tributário na esfera cível."
           />
         </div>
       </Demo>

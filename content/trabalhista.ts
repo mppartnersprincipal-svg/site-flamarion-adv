@@ -50,7 +50,7 @@ export const trabalhista = {
   porQue: {
     titulo: "Por que a Flamarion",
     itens: [
-      "Atuação trabalhista presente desde o início da trajetória do escritório, em 1996.",
+      "Atuação trabalhista presente desde o início da trajetória do escritório, em 1997.",
       "Acompanhamento em todas as fases, com comunicação clara sobre cada etapa.",
       "Visão integrada entre o direito do trabalho e a rotina das empresas.",
     ],

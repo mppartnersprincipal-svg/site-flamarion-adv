@@ -42,7 +42,7 @@ export default function OEscritorioPage() {
               />
               <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-noite/80 via-transparent to-transparent" />
               <figcaption className="absolute bottom-0 left-0 p-6 text-offwhite">
-                <p className="font-display text-2xl">Desde 1996</p>
+                <p className="font-display text-2xl">Desde 1997</p>
                 <span aria-hidden="true" className="gold-rule mt-3" />
                 <p className="mt-3 text-sm text-gelo/90">Escritório próprio e atuação ininterrupta</p>
               </figcaption>

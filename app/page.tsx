@@ -77,7 +77,7 @@ export default function HomePage() {
               <WhatsappButton variant="outline" dark size="lg" label={home.hero.cta2} />
             </div>
             <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-gelo/80">
-              <li className="inline-flex items-center gap-2"><IconCheck size={16} className="text-dourado" /> Desde 1996</li>
+              <li className="inline-flex items-center gap-2"><IconCheck size={16} className="text-dourado" /> Desde 1997</li>
               <li className="inline-flex items-center gap-2"><IconCheck size={16} className="text-dourado" /> {site.oabMarcio}</li>
               <li className="inline-flex items-center gap-2"><IconCheck size={16} className="text-dourado" /> Goiás, DF e todo o Brasil</li>
             </ul>
@@ -185,7 +185,7 @@ export default function HomePage() {
                   Quase <span className="text-gold-gradient">30 anos</span> de advocacia contínua
                 </p>
                 <span aria-hidden="true" className="gold-rule mt-4" />
-                <p className="mt-4 text-sm text-gelo/85">Escritório próprio e atuação ininterrupta desde 1996.</p>
+                <p className="mt-4 text-sm text-gelo/85">Escritório próprio e atuação ininterrupta desde 1997.</p>
               </div>
             </div>
           </Reveal>
@@ -205,7 +205,7 @@ export default function HomePage() {
           <StatBand
             className="mt-16"
             items={[
-              { valor: "1996", label: "Advogando desde", icon: <IconCalendar size={30} /> },
+              { valor: "1997", label: "Advogando desde", icon: <IconCalendar size={30} /> },
               { valor: "30", label: "Quase três décadas de atuação", icon: <IconColumn size={30} /> },
               { valor: "04", label: "Frentes de atuação", icon: <IconBalance size={30} /> },
               { valor: "GO · DF", label: "Foco regional, atendimento nacional", icon: <IconGlobe size={30} /> },

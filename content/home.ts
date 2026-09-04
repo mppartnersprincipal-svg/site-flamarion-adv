@@ -73,7 +73,7 @@ export const home = {
     eyebrow: "Quem conduz o escritório",
     titulo: "Dois olhares sobre o mesmo compromisso",
     texto:
-      "Dr. Márcio Flamarion advoga desde 1996, com atuação consolidada na área empresarial e na defesa em crimes contra a ordem tributária. A ele soma-se a Dra. Letícia Alves, que traz ao escritório uma nova frente em direito do consumidor e tributário. Juntos, técnica e continuidade.",
+      "Dr. Márcio Flamarion advoga desde 1997, com atuação consolidada na área empresarial e na defesa em crimes contra a ordem tributária. A ele soma-se a Dra. Letícia Alves, que traz ao escritório uma nova frente em direito do consumidor e tributário. Juntos, técnica e continuidade.",
     link: "Conheça a equipe",
   },
   localizacao: {
