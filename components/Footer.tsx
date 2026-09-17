@@ -111,7 +111,7 @@ export default function Footer() {
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <p>© {ano} {site.nome}. Todos os direitos reservados.</p>
             <p>
-              Dr. Márcio Flamarion — {site.oabMarcio} · Dra. Letícia Alves — OAB/GO {site.oabLeticia || "[a confirmar]"}
+              Dr. Márcio Flamarion — {site.oabMarcio} · Dra. Letícia Alves — {site.oabLeticia}
             </p>
           </div>
           <p className="mt-3">Conteúdo de caráter meramente informativo, em conformidade com o Provimento nº 205/2021 da OAB.</p>

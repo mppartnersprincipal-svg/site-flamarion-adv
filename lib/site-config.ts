@@ -13,7 +13,7 @@ export const site = {
     "Segunda Avenida, Qd. 01 B, Lt. 42/44, Edifício Atlanta Business Center, Sala 15, 2º Andar, Condomínio Cidade Empresarial, Cidade Vera Cruz, Aparecida de Goiânia/GO",
   horario: "Segunda a sexta, das 8h às 12h e das 13h30 às 17h30",
   oabMarcio: "OAB/GO 16.939",
-  oabLeticia: "", // PENDENTE — inscrição prevista para setembro/2026
+  oabLeticia: "OAB/GO 80.246",
   dominio: "flamarionadvocacia.com.br",
 };
 

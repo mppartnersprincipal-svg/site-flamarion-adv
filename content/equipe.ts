@@ -26,7 +26,7 @@ export const equipe = {
     {
       nome: "Dra. Letícia Alves",
       cargo: "Advogada",
-      oab: site.oabLeticia, // vazio → "OAB/GO [a confirmar]"
+      oab: site.oabLeticia,
       bio: "A Dra. Letícia integra o escritório com foco em direito do consumidor — especialmente direito aéreo — e em direito tributário na esfera cível. Está iniciando pós-graduação em Direito Tributário e Processo Tributário, aprofundando a área que pretende desenvolver dentro da Flamarion Advocacia. Traz um olhar atual e uma atuação atenta e didática para o dia a dia dos clientes.",
       foto: { src: "/fotos/retrato-leticia.jpg", alt: "Retrato da Dra. Letícia Alves, advogada da Flamarion Advocacia" },
     },
